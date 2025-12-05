@@ -111,16 +111,15 @@ video {
     display: flex;
     align-items: center;
     gap: 15px;
-    opacity: 0;
-    transform: translateY(10px);
+    opacity: 1;
+    /* Always visible */
+    transform: translateY(0);
+    /* Always visible */
     transition: all 0.3s ease;
 }
 
-.video-wrapper:hover .controls,
-.controls:hover {
-    opacity: 1;
-    transform: translateY(0);
-}
+/* .video-wrapper:hover .controls rule is no longer needed since it's always visible */
+
 
 /* Buttons */
 button {
